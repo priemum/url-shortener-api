@@ -1,0 +1,31 @@
+{
+  "name": "url-shortener-api",
+  "version": "1.0.0",
+  "description": "Simple one, A URL Shortener API. Do I have to explain more?",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Volcie/url-shortener-api.git"
+  },
+  "keywords": [
+    "URL",
+    "Shortener",
+    "API"
+  ],
+  "author": "https://github.com/Volcie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Volcie/url-shortener-api/issues"
+  },
+  "homepage": "https://github.com/Volcie/url-shortener-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  }
+}
