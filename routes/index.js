@@ -8,7 +8,7 @@ router.get("/:key", async (req, res) => {
 });
 
 router.post("/:key", async(req, res) => {
-        var {key} = req.params
+        var {key} = req.params 
         if(!req.body.startsWith("http://") && !req.body.startsWith("https://")) req.body.url = `https://${req.body.url}`
         if(!req.body) return res.status(400).send(`URL must be sent in the request's body.`)
         res.send(await new ShortenModel({key, author: req.hostname, url: req.body.url}).save())
